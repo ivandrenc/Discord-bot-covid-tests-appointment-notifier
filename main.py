@@ -18,7 +18,7 @@ def start(links):
                 if ((x.hour == 17 and x.minute == 30) or x.hour == 18 or x.hour == 9 or x.hour == 14):
                     for i in content["data"][""]:
                         if content["data"][""][i] > 0:
-                            sendSignal(str(content["data"][""][i]) + " Termin verfügbar: um " + i + link[1])
+                            sendSignal(str(content["data"][""][i]) + " Termin verfügbar: um " + i + link[2])
                     
                 count = count +1
                 print("No termin available..."+ str(count))
